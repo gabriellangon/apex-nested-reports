@@ -67,9 +67,10 @@ Example nested report is based on `emp` and `dept` table.
 1. Create `Classic Report` based on SQL query `*` 
 1. Create derivied column and configure it as follows:
    1. Change derivied column `Type` to `Link`
-   1. Set `Target` to `URL`
-   1. Set `URL` to `<span class="fa fa-search"></span><span class="DEPTNO" style="display: none">#DEPTNO#</span>`
-   1. Set `Link Attributes` to `class="dept"`
+   2. Set `Target` to `URL`
+   3. Set `URL` to `javascript: void(0);`
+   4. Set `Link Text` to `<span class="fa fa-search"></span><span class="DEPTNO" style="display: none">#DEPTNO#</span>`
+   5. Set `Link Attributes` to `class="dept"`
 1. Create new dynamic action and configure it as follows:
    1. Set `Event` to `Click`
    1. Set `Selection Type` to `jQuery Selector`
